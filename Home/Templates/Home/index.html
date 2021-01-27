@@ -1,0 +1,47 @@
+{% load static %}
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Henry</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'Home/bs/css/flatly.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'Home/style.css' %}" /> 
+
+  </head>
+  <body>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">PORTFOLIO</label>
+        <ul>
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="/About">About</a></li>
+          <li><a href="/The_Portfolio">Portfolio</a></li>
+          <li><a href="/Contacts">Contact</a></li>
+        </ul>
+      </nav>
+      <footer class="mt-auto text-black-50">
+        <div class="footicon">
+          <a href="https://www.linkedin.com/in/henry-ndaga-3184881b1/" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin"></a>
+          <a href="https://github.com/HenryOchieng/" target="_blank" rel="noopener noreferrer" class="fa fa-github"></a>
+          <a href="https://stackoverflow.com/users/13932088/henry" target="_blank" rel="noopener noreferrer" class="fa fa-stack-overflow"></a>
+          <a href="https://api.whatsapp.com/send?phone=254790238118" target="_blank" rel="noopener noreferrer" class="fa fa-whatsapp"></a>
+          <a href="https://twitter.com/Henry_Ndaga" target="_blank" rel="noopener noreferrer" class="fa fa-twitter"></a>
+          <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer" class="fa fa-facebook"></a>
+        </div>
+        <div class="copyright">
+          Copyright &copy; Henry Ndaga 2021.
+        </div>
+      </footer>
+    </div>  
+  </body>
+</html>
