@@ -9,7 +9,7 @@ from .models import Home
 
 def Home(request):
    # homes = Home.objects
-    return render(request,'Home/index.html',{'Home':Home})
+    return render(request,'Home/index.html')
 
 def About(request):
     return render(request, 'About/index.html')
