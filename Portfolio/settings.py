@@ -26,7 +26,7 @@ SECRET_KEY = 'sqo5+#2qphf7d4@#ddz6&6hu_c+^%@j39vv4c!v2()dqex3ty^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['henry-ndaga.herokuapp.com']
+ALLOWED_HOSTS = ['henry-ndaga.herokuapp.com', '127.0.0.1']
 #EMAIL_HOST = 'smtp.gmail.com'
 #EMAIL_HOST_USER = 'henryochieng8@gmail.com'
 #EMAIL_HOST_PASSWORD = ''
@@ -136,15 +136,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_ROOT,'staticfiles')
-STATIC_URL = '/static/'
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/statifiles/'
+#STATICFILES_DIRS = (
+ #   os.path.join(BASE_DIR, 'staticfiles'),
+#)
 
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
-)
-
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 import dj_database_url 
 prod_db  =  dj_database_url.config(conn_max_age=500)
