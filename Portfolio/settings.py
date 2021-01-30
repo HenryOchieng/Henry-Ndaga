@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'sqo5+#2qphf7d4@#ddz6&6hu_c+^%@j39vv4c!v2()dqex3ty^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['henry-ndaga.herokuapp.com', '127.0.0.1']
 #EMAIL_HOST = 'smtp.gmail.com'
