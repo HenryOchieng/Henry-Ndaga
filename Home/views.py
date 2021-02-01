@@ -8,7 +8,6 @@ from .models import Home
 # Create your views here.
 
 def Home(request):
-   # homes = Home.objects
     return render(request,'Home/index.html')
 
 def About(request):
