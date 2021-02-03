@@ -7,6 +7,8 @@ from .models import Home
 
 class HomeView(TemplateView):
     template_name = "Home/index.html"
+    def Home(self):
+        return render('Home/index.html')
 class AboutView(TemplateView):
     template_name = "About/index.html"
 #def Home(request):
