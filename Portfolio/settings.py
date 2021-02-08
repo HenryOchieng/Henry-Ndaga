@@ -41,10 +41,10 @@ ALLOWED_HOSTS = ['henry-ndaga.herokuapp.com', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'Contacts.apps.ContactsConfig',
-    'The_Portfolio.apps.ThePortfolioConfig',
-    'About.apps.AboutConfig',
     'Home.apps.HomeConfig',
+    'About.apps.AboutConfig',
+    'The_Portfolio.apps.ThePortfolioConfig',
+    'Contacts.apps.ContactsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -71,8 +71,7 @@ ROOT_URLCONF = 'Portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        #'DIRS': [os.path.join(BASE_DIR, 'templates')],
-        'DIRS':['Portfolio/templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
