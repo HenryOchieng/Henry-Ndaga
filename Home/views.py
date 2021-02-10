@@ -10,7 +10,7 @@ from .models import Home
 #class AboutView(TemplateView):
  #   template_name = "About/index.html"
 def Home(request):
-    return render(request,'Home/index.html',{'Home': Home})
+    return render(request,'Home/index.html')
 
 def About(request):
     return render(request, 'About/index.html')
