@@ -18,7 +18,7 @@ def Contacts(request):
         return redirect('feedback')
     #else:
        # f = ContactsForm()
-    return render(request, 'Contacts/main.html', {})
+    return render(request, 'Contacts/index.html', {})
 
 
 def Home(request):
