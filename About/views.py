@@ -6,7 +6,6 @@ from .models import About
 
 # Create your views here.
 def index(request):
-   # abouts = About.objects
     return render(request,'About/main.html')
 
 def Home(request):
