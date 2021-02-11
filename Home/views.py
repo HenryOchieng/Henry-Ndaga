@@ -12,7 +12,7 @@ from .models import Home
 #class AboutView(TemplateView):
  #   template_name = "About/index.html"
 def Home(request):
-    return render(request,'Home/index.html')
+    return render(request,'Home/main.html')
 
 def About(request):
     return render(request, 'About/index.html')
