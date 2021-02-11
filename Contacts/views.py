@@ -18,11 +18,11 @@ def Contacts(request):
         return redirect('feedback')
     #else:
        # f = ContactsForm()
-    return render(request, 'Contacts/index.html', {})
+    return render(request, 'Contacts/main.html', {})
 
 
 def Home(request):
-   return render(request,'Home/index.html')
+   return render(request,'Home/main.html')
 
 
 

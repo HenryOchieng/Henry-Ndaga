@@ -15,10 +15,10 @@ def Home(request):
     return render(request,'Home/main.html')
 
 def About(request):
-    return render(request, 'About/index.html')
+    return render(request, 'About/main.html')
 
 def The_Portfolio(request):
-    return render(request, 'The_Portfolio/index.html')
+    return render(request, 'The_Portfolio/main.html')
 
 def Contacts(request):
-    return render(request, 'Contacts/index.html')
+    return render(request, 'Contacts/main.html')

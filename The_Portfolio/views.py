@@ -8,7 +8,7 @@ from .models import The_Portfolio
 
 def index(request):
     portfolios = The_Portfolio.objects
-    return render(request,'The_Portfolio/index.html',{'portfolios':The_Portfolio})
+    return render(request,'The_Portfolio/main.html')
 
 def Home(request):
-    return render(request,'Home/index.html')
+    return render(request,'Home/main.html')
