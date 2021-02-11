@@ -15,7 +15,7 @@ def Home(request):
     return render(request,'Home/main.html')
 
 def About(request):
-    return render(request, 'About/main.html')
+    return render(request, 'About/index.html')
 
 def The_Portfolio(request):
     return render(request, 'The_Portfolio/main.html')
