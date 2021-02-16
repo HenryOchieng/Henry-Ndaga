@@ -187,6 +187,9 @@ h2 {
     color:#36454F;
 }
 @media (min-width:280px) and (max-width: 952px){
+  body{
+    height: max-content;
+  }
   nav{
     width: 100%;
   }
@@ -211,6 +214,8 @@ h2 {
   }
   nav ul li a{
     font-size: 15px;
+    position: relative;
+    z-index: 9;
     appearance: none;
   }
   .checkbtn{

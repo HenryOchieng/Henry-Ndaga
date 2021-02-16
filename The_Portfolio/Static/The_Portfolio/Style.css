@@ -37,11 +37,13 @@ label.logo{
 nav ul{
   float: right;
   margin-right: 20px;
+  z-index: 999;
 }
 nav ul li{
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
+  z-index: 999;
 }
 nav ul li a{
   color:  #36454F;
@@ -49,6 +51,7 @@ nav ul li a{
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
+  z-index: 999;
 }
 a.active,a:hover{
   background: none;
@@ -111,6 +114,7 @@ a.active,a:hover{
   box-shadow: 0 4rem 8rem #36454F;
 }
  .card-title h3{
+   text-decoration: underline;
    color: #d9dab0;
    font-family: Bodoni Moda;
    font-size: 30px;
@@ -119,13 +123,14 @@ a.active,a:hover{
 }
 .card-content{
   color: wheat;
-  opacity:.6;
+  opacity:.9;
 }
 .card-content p{
   padding-left: 5px;
 
 }
 .card-content h4{
+  text-decoration: underline;
   font-family: Bodoni Moda;
   font-weight: bold;
   padding-left: 5px;
@@ -161,7 +166,7 @@ a.active,a:hover{
 @media (min-width:280px) and (max-width: 952px){
   nav{
     width: 100%;
-    z-index: 999;
+    z-index: 9;
   }
   label.logo{
     font-size: 25px;
@@ -179,6 +184,7 @@ a.active,a:hover{
     left: -100%;
     text-align: center;
     transition: all .5s;
+    z-index: 9;
   }
   nav ul li{
     display: block;
@@ -190,6 +196,8 @@ a.active,a:hover{
     font-size: 14px;
     padding-left: 150px;
     text-align: center;
+    position: relative;
+    z-index: 9;
     color: greenyellow;
   }
   a:hover,a.active{
