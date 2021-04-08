@@ -28,6 +28,7 @@ SECRET_KEY = 'sqo5+#2qphf7d4@#ddz6&6hu_c+^%@j39vv4c!v2()dqex3ty^'
 DEBUG = True
 
 ALLOWED_HOSTS = ['henry-ndaga.herokuapp.com', '127.0.0.1']
+
 #EMAIL_HOST = 'smtp.gmail.com'
 #EMAIL_HOST_USER = 'henryochieng8@gmail.com'
 #EMAIL_HOST_PASSWORD = ''
@@ -39,17 +40,14 @@ ALLOWED_HOSTS = ['henry-ndaga.herokuapp.com', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'Home.apps.HomeConfig',
-    'About.apps.AboutConfig',
-    'The_Portfolio.apps.ThePortfolioConfig',
-    'Contacts.apps.ContactsConfig',
+    'base.apps.BaseConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'crispy_forms',
+   # 'crispy_forms',
 ]
 #CRSIPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -69,7 +67,7 @@ ROOT_URLCONF = 'Portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, '../templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -90,13 +88,13 @@ WSGI_APPLICATION = 'Portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        #'NAME': BASE_DIR / 'db.sqlite3',
-        'NAME': 'portfoliodb',
-        'USER': 'postgres',
-        'PASSWORD': 'unbeaten49',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        #'NAME': 'portfoliodb',
+        #'USER': 'postgres',
+        #'PASSWORD': 'unbeaten49',
+        #'HOST': 'localhost',
+        #'PORT': '5432',
     }
 }
 
