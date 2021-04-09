@@ -1,3 +1,4 @@
 henry
 .vscode/
 __pycache__
+.env
