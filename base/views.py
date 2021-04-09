@@ -23,13 +23,27 @@ class ProjectListAndFormView(SuccessMessageMixin, ListView, FormView):
 
     def form_valid(self, form):
         # This method is called when valid form data has been POSTed.
-        #cd = form.cleaned_data
-        #con = get_connection('django.core.mail.backends.console.EmailBackend')
-        #send_mail(
-         #   cd['name'],
-          #  cd['message'],
-           # cd.get('email', 'ochienghenry@zetech.ac.ke'),
-            #['henryochieng8@gmail.com'],
-            #fail_silently=False
-       # )
+        cd = form.cleaned_data
+        con = get_connection('django.core.mail.backends.console.EmailBackend')
+        send_mail(
+            cd['name'],
+            cd['message'],
+            cd.get('email', ''),
+            ['henryochieng8@gmail.com'],
+            fail_silently=True
+        )
         return super(ProjectListAndFormView, self).form_valid(form)
+#def ContactView(request, *args, **kwargs):
+ #   form = ContactForm()
+  #  if request.method == 'POST':
+   #     name = request.POST['name']
+    #    email = request.POST['email']
+     #   message = request.POST['message']
+      #  form = ContactForm(request.POST)
+       # if form.is_valid():
+        #    send_mail(message, email, ['henryochieng8@gmail.com'], fail_silently=True)
+         #   form.save()
+        #context = {
+         #   'form':form
+        #}
+        
