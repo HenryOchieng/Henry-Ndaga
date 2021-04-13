@@ -1,7 +1,7 @@
 <form action="#contact" method="post" id="contact-form" role="form">
   <div class="ajax-hidden">
     {% if messages %}
-      <ul class="messages" style="list-style-type: none;color: red;text-align:center;">
+      <ul class="messages" style="list-style-type: none;color: black;text-align:center;">
         {% for message in messages %}
           <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
         {% endfor %}
