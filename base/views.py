@@ -33,17 +33,5 @@ class ProjectListAndFormView(SuccessMessageMixin, ListView, FormView):
             fail_silently=True
         )
         return super(ProjectListAndFormView, self).form_valid(form)
-#def ContactView(request, *args, **kwargs):
- #   form = ContactForm()
-  #  if request.method == 'POST':
-   #     name = request.POST['name']
-    #    email = request.POST['email']
-     #   message = request.POST['message']
-      #  form = ContactForm(request.POST)
-       # if form.is_valid():
-        #    send_mail(message, email, ['henryochieng8@gmail.com'], fail_silently=True)
-         #   form.save()
-        #context = {
-         #   'form':form
-        #}
+
         
