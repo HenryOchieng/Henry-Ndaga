@@ -1,9 +1,11 @@
 html{
 	scroll-behavior: smooth;
 }
+
 body{
 	font: 300 14px/1.8 'Raleway', sans-serif;
 	color: #666;
+	width: 100%;
 	overflow-x: hidden;	
 }
 img {
@@ -646,3 +648,4 @@ figure.effect-lily img {
 figure.effect-lily:hover img {
 	opacity: 50;
 }
+
