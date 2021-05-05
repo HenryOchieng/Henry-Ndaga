@@ -10,7 +10,7 @@
 This is my personal portfolio website that entails my life details as a software developer.
 	
 ## Technologies
-Project is created with:
+The Project was developed using:
 * Python version 3.8.7
 * Javascript
 * Django verion 3.1.6
