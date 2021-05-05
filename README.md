@@ -1,49 +1,36 @@
-# Project Name
-> Here goes your awesome project description!
+# Henry-Ndaga
+> My Portfio Website
 
 ## Table of contents
 * [General info](#general-info)
-* [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
 
 ## General info
-Add more general information about project. What the purpose of the project is? Motivation?
-
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-
+This is my personal portfolio website that entails my life details as a software developer.
+	
 ## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+Project is created with:
+* Python version 3.8.7
+* Javascript
+* Django verion 3.1.6
+* Bootstrap version 4
+* HTML
+* CSS
+
 
 ## Setup
-Describe how to install / setup your local environement / add link to demo version.
 
-## Code Examples
-Show examples of usage:
-`put-your-code-here`
+1. Git Clone the project with: ```git clone https://github.com/HenryOchieng/Henry-Ndaga.git```.
 
-## Features
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+2. Move to the base directory: ```cd Henry-Ndaga```
 
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+3. Create a new python enveronment with: ```python -m venv env```.
 
-## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
+4. Activate enveronment with: ```env\Scripts\activate``` on windows, or ```source env/bin/activate``` on Mac and Linux.
 
-## Inspiration
-Add here credits. Project inspired by..., based on...
+5. Install required dependences with: ```pip install -r requirements.txt```.
 
-## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+6. Make migrations with: ```python manage.py makemigrations``` and then ```python manage.py migrate```.
+
+7. Run app localy with: ```python manage.py runserver```.
