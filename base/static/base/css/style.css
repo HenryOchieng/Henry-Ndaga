@@ -587,7 +587,7 @@ div[class^="devicon"] span{
 }
 
 #status {
-	background-image: url("../images/Spinner-1s-200px.gif");
+	background-image: url("../images/preloader.gif");
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 200px;

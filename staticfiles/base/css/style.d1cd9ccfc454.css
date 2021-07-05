@@ -375,7 +375,7 @@ div[class^="devicon"] span{
     text-align: center;
 }
 .calltoaction {
-    background: url("../images/pexels-luis-gomes-546819.jpg");
+    background: url("../images/pexels-luis-gomes-546819.515ea5998aae.jpg");
 	background-color: #222;
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -418,7 +418,7 @@ div[class^="devicon"] span{
   .image-background {
 	height: 100vh;
 	min-height: 500px;
-	background-image: url("../images/pexels-hasan-albari-1229861.jpg");
+	background-image: url("../images/pexels-hasan-albari-1229861.6b00952718cb.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -587,7 +587,7 @@ div[class^="devicon"] span{
 }
 
 #status {
-	background-image: url("../images/preloader.gif");
+	background-image: url("../images/preloader.8b546d9c028e.gif");
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 200px;
