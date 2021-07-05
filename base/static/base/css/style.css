@@ -57,6 +57,11 @@ a:hover{
 	gap: 4rem;
 	/*padding-left: 90px;*/
 }
+.card-body p{
+	font-size: medium;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: #383e56;
+}
 .card-content p{
 	text-align: center;
 	font-size: medium;
@@ -246,7 +251,7 @@ input:nth-child(3n){
 }
 .pfblock {
 	padding: 120px 0 100px;
-	background-color: #fbf7f0;
+	background-color: #f6f5f1;
 }
 .pfblock-grey{
 	background-color: #a2d5f2;
@@ -652,5 +657,6 @@ figure.effect-lily img {
 
 figure.effect-lily:hover img {
 	opacity: 50;
+	cursor: pointer;
 }
 

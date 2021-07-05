@@ -15,6 +15,7 @@
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <title>Henry</title>
     </head>
 	<body>
@@ -74,7 +75,7 @@
 		</header>
 		<!-- Navigation end -->
 		<section id="about" class="pfblock pfblock-gray">
-			<div class="container">
+			<div class="container" data-aos="fade-up" data-aos-delay="100">
 				<div class="row">
 					<div class="col-sm-8">
 						<div class="pfblock-header wow fadeInUp">
@@ -96,8 +97,8 @@
 				</div>
 			</div>
 		</section>
-		<section id="skills" class="pfblock pfblock-skills" >
-			<center>
+		<section id="skills" class="pfblock pfblock-skills">
+			<center data-aos="fade-up" data-aos-delay="100">
 				<div class="skills col-xs-12">
 					<h2 class="pfblock-title">SKILLS</h2>
 					<div class="pfblock-line"></div>
@@ -121,7 +122,7 @@
 		</section>
 		<!-- Portfolio start -->
 		<section id="portfolio" class="pfblock">
-			<div class="container">
+			<div class="container" data-aos="fade-up" data-aos-delay="100">
 				<center>
 					<div class="col-sm-6 col-sm-offset-3">
 						<div class="pfblock-header wow fadeInUp">
@@ -134,30 +135,23 @@
 				<center>
 					<div class="container1">
 						<div class="card1">
-							<div class="card" >
-							  <div class="card-content">
-								  <div class="grid">
-									  <figure class="effect-lily">
-										<img src="{% static 'base/images/WeConnect.PNG' %}" alt="We Connect">
-										<p>Django-based twitter clone web application. Users can sign up, tweet, update and delete a tweet, follow and unfollow another user as well update their profile. Its hosted on heroku platform.</p>
-										<a class="btn btn-primary" href="https://github.com/HenryOchieng/WeConnect" target="_blank" rel="noopener noreferrer" role="button">Source Code</a>
-										<a class="btn btn-primary" href="https://py-twitter.herokuapp.com/login/?next=/" target="_blank" rel="noopener noreferrer" role="button" style="margin-left: 20px;">Live App</a>
-									  </figure>
-								  </div>
-							  </div>
-							</div>
-							<div class="card">
-							  <div class="card-content">
-								<div class="grid">
-									<figure class="effect-lily">
-									  <img src="{% static 'base/images/TopTrends.PNG' %}" alt="We Connect">
-									  <p>This is a django-based web application that leverages the News API to generate different categories of world news from multiple sources. Its hosted on heroku platform.</p>
-									  <a class="btn btn-primary" href="https://github.com/HenryOchieng/TopTrends" target="_blank" rel="noopener noreferrer" role="button">Source Code</a>
-									  <a class="btn btn-primary" href="https://top-trends.herokuapp.com/" target="_blank" rel="noopener noreferrer" role="button" style="margin-left: 20px;">Live App</a>
-									</figure>
+							<div class="card" style="width:20rem;">
+								<figure class="effect-lily">
+								  <img class="card-img-top" src="{% static 'base/images/WeConnect.PNG' %}" alt="Card image" style="width:100%">
+								</figure>
+								<div class="card-body">
+								  <a class="btn btn-primary" href="https://github.com/HenryOchieng/WeConnect" target="_blank" rel="noopener noreferrer" role="button">Source Code</a>
+								  <a class="btn btn-primary" href="https://py-twitter.herokuapp.com/" target="_blank" rel="noopener noreferrer" role="button">Live App</a>
 								</div>
-								
-							  </div>
+							</div>
+							<div class="card" style="width:20rem;">
+								<figure class="effect-lily">
+								  <img class="card-img-top" src="{% static 'base/images/TopTrends.PNG' %}" alt="Card image" style="width:100%">
+								</figure>
+								<div class="card-body">
+								  <a class="btn btn-primary" href="https://github.com/HenryOchieng/TopTrends" target="_blank" rel="noopener noreferrer" role="button">Source Code</a>
+								  <a class="btn btn-primary" href="https://top-trends.herokuapp.com/" target="_blank" rel="noopener noreferrer" role="button">Live App</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -168,7 +162,7 @@
 		<!-- Portfolio end -->
 		<!-- CallToAction start -->
 		<section class="calltoaction">
-			<div class="container-fluid">
+			<div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
 				<div class="row">
 					<div class="col-md-12 col-lg-12">
 						<h2 class="wow slideInRight" data-wow-delay=".1s">ARE YOU READY TO START?</h2>
@@ -179,13 +173,13 @@
 					<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
 						<a href="#contact" class="btn btn-lg">Hire Me</a>
 					</div>
-				</div><!-- .row -->
-			</div><!-- .container -->
+				</div>
+			</div>
 		</section>
 		<!-- CallToAction end -->
 		<!-- Contact start -->
-		<section id="contact" class="pfblock pfblock-grey">
-			<center>
+		<section id="contact" class="pfblock pfblock-grey"> 
+			<center data-aos="fade-up" data-aos-delay="100">
 				<div class="col-sm-6 col-sm-offset-3">
 					<div class="pfblock-header">
 						<h2 class="pfblock-title">Contact</h2>
@@ -203,7 +197,7 @@
 		<!-- Contact end -->
 		<!-- Footer start -->
 		<footer id="footer">
-			<div class="container">
+			<div class="container" data-aos="fade-up" data-aos-delay="100">
 				<div class="row">
 					<div class="col-sm-12">
 						<ul class="social-links">
@@ -225,8 +219,12 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="{% static 'base/js/preloader.js' %}"></script>
 		<script src="{% static 'base/js/script.js' %}"></script>
 		<script src="{% static 'base/js/main.js' %}"></script>
+		<script>   
+			AOS.init(); 
+		</script>
 	</body>
 </html>
