@@ -464,16 +464,16 @@ div[class^="devicon"] span{
 	display: block;
 	line-height: 35px;
 	text-align: center;
-	border: 1px solid #a2d5f2;
+	border: 1px solid rgba(255, 255, 255, .5);
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
 			border-radius: 3px;
 	font-size: 14px;
-	color:#a2d5f2;
+	color: rgba(255, 255, 255, .8);
 }
 .social-links a:hover {
-	border: 1px solid rgba(255, 255, 255, .5);
-	color: rgba(255, 255, 255, .8);
+	border: 1px solid #a2d5f2;
+	color:#a2d5f2;
 }
 .header {
 	border-bottom: 1px solid black;
