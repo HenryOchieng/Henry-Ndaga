@@ -375,7 +375,7 @@ div[class^="devicon"] span{
     text-align: center;
 }
 .calltoaction {
-    background: url("../images/pexels-luis-gomes-546819.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../images/pexels-luis-gomes-546819.jpg");
 	background-color: #222;
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -418,7 +418,7 @@ div[class^="devicon"] span{
   .image-background {
 	height: 100vh;
 	min-height: 500px;
-	background-image: url("../images/pexels-hasan-albari-1229861.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../images/pexels-hasan-albari-1229861.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -464,12 +464,13 @@ div[class^="devicon"] span{
 	display: block;
 	line-height: 35px;
 	text-align: center;
-	border: 1px solid rgba(255, 255, 255, .1);
+	border: 1px solid #a2d5f2;
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
 			border-radius: 3px;
 	font-size: 14px;
-	color: rgba(255, 255, 255, .2);
+	color:#a2d5f2;
+	/**color: rgba(255, 255, 255, .2);**/
 }
 .social-links a:hover {
 	border: 1px solid rgba(255, 255, 255, .5);
