@@ -470,7 +470,6 @@ div[class^="devicon"] span{
 			border-radius: 3px;
 	font-size: 14px;
 	color:#a2d5f2;
-	/**color: rgba(255, 255, 255, .2);**/
 }
 .social-links a:hover {
 	border: 1px solid rgba(255, 255, 255, .5);
