@@ -31,47 +31,50 @@ a:hover{
     width: 20%;
     float: left;
 }
-.container1{
-	display:inline-table;
-	/*width: 100%;*/
-	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-	align-items: flex;
-}
 .card{
-	font-family: Bodoni Moda;
-	/*width: 570px;*/
-	/*position: relative;*/
-	min-height: 2fr;
-	background-color:whitesmoke;
-	border-radius: 0.4rem; 
-	transition: 0.2s;
+	display:inline-block;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 7fr));
+	width: 50%;
+	margin-bottom: 10px;
 }
-  
+.card:hover .card-img{
+	opacity: 0.3;
+}
+.card:hover .card-img-overlay{
+	opacity: 1;
+}
+.card-img{
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+.card-img:hover{
+	transform: scale(1.03);
+    opacity: 1;
+}
+.card-img-overlay{
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
 .card:hover{
 	transform: translateY(-5);
 	box-shadow: 0 4rem 8rem #e4fbff;
+	
 }
-.card1{
-	display: flex;
-	flex-direction: row;
-	gap: 4rem;
-	/*padding-left: 90px;*/
-}
-.card-body p{
-	font-size: medium;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	color: #383e56;
-}
-.card-content p{
-	text-align: center;
-	font-size: medium;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	color: black;
-	padding-left: 5px;
-	padding-top: 10px;
-}
-.card-content a{
-	gap: 55rem;
+.card-text{
+	background-color: #04AA6D;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
 }
 @media (min-width:280px) and (max-width: 952px){
 	.container{
@@ -251,7 +254,7 @@ input:nth-child(3n){
 }
 .pfblock {
 	padding: 120px 0 100px;
-	background-color: #f6f5f1;
+	background-color: #CCFFBD;
 }
 .pfblock-grey{
 	background-color: #a2d5f2;
@@ -334,7 +337,6 @@ div[class^="devicon"] {
 	font-size: 80px;
     margin:  2vh auto 2vh auto;
 	padding-left: 7rem;
-	/*padding-left: 100px;*/
 	text-align: center;
 }
 
@@ -356,7 +358,6 @@ div[class^="devicon"] span{
 	div[class^="devicon"] {
 		font-size: 40px;
 		padding-left: 1rem;
-		/*padding-left: 14px;*/
 	}
 
 	div[class^="devicon"] > span{
@@ -366,6 +367,18 @@ div[class^="devicon"] span{
 		text-align: left;
 		padding-left: 5px;
 	}
+}
+.card-img-top{
+	width: 100%;
+    height: 15vw;
+    object-fit: cover;
+	transform: scale(1.20);
+    opacity: 0.7;
+    transition: opacity 0.4s, transform 0.4s;
+}
+.card-img-top:hover{
+	transform: scale(1.03);
+    opacity: 1;
 }
 
 .pfblock-icon {
@@ -502,7 +515,6 @@ div[class^="devicon"] span{
 	border: 0;
 	border-radius: 0;
 	margin: 0;
-	/*text-transform: uppercase;*/
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .nav-link{
@@ -632,47 +644,5 @@ div[class^="devicon"] span{
 		margin: 0 0 30px;
 		letter-spacing: 3px;
 	}
-
-}/*
-.card {
-	padding: 0px 10px 0px 5px;
-	margin: 10px 30px 10px;
-	border: 1px solid lightgray;
-}
-
-.card-text {
-	height: 100px;
-	overflow: auto;
-}*/
-.grid {
-	position: relative;
-	clear: both;
-	margin: 0 auto;
-	max-width: 100%;
-	list-style: none;
-	text-align: center;
-}
-.grid figure {
-	position: relative;
-	float: left;
-	overflow: hidden;
-	margin: 1px 1%;
-	min-width: 100%;
-	max-width: 100%;
-	height: auto;
-	background: #e4fbff;
-	text-align: center;
-	cursor: pointer;
-}
-
-figure.effect-lily img {
-	opacity: 0.9;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
-}
-
-figure.effect-lily:hover img {
-	opacity: 50;
-	cursor: pointer;
 }
 
