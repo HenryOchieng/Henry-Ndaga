@@ -31,6 +31,9 @@ a:hover{
     width: 20%;
     float: left;
 }
+.card-deck{
+	margin-bottom: 50px;
+}
 .card{
 	display:inline-block;
 	grid-template-columns: repeat(auto-fit, minmax(30rem, 7fr));
@@ -67,30 +70,26 @@ a:hover{
 }
 .card:hover{
 	transform: translateY(-5);
-	box-shadow: 0 4rem 8rem #e4fbff;
+	box-shadow: 0 4rem 8rem #343A40;
 	
 }
 .card-text{
 	background-color: #04AA6D;
 	color: white;
 	font-size: 16px;
-	padding: 16px 32px;
+	padding: 10px 10px;
 }
 @media (min-width:280px) and (max-width: 952px){
-	.container{
-		grid-template-columns: 1fr;
-		gap: 1px;
-		padding-top: 10px;
+	.card-deck{
+		margin-bottom: 0px;
 	}
+
 	.card{
 		grid-template-columns: auto;
 		width: 100%;
 		margin: 40px 10px;
 		margin-left: 0;
 		background-color: #e4fbff;
-	}
-	.card1{
-		display: inline;
 	}
 }
 .navbar a,

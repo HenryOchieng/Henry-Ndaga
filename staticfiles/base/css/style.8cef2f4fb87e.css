@@ -387,7 +387,7 @@ div[class^="devicon"] span{
     text-align: center;
 }
 .calltoaction {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../images/pexels-luis-gomes-546819.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../images/pexels-luis-gomes-546819.515ea5998aae.jpg");
 	background-color: #222;
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -431,7 +431,7 @@ div[class^="devicon"] span{
 	height: 100vh;
 	background-color:rgba(0,0,0, 0.4);;
 	min-height: 500px;
-	background-image:url("../images/pexels-hasan-albari-1229861.jpg");
+	background-image:url("../images/pexels-hasan-albari-1229861.6b00952718cb.jpg");
 	filter: blur(5px);
 	-webkit-filter: blur(5px);
 	background-size: cover;
@@ -614,7 +614,7 @@ div[class^="devicon"] span{
 }
 
 #status {
-	background-image: url("../images/preloader.gif");
+	background-image: url("../images/preloader.8b546d9c028e.gif");
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 200px;
