@@ -7,7 +7,7 @@
 * [Setup](#setup)
 
 ## General info
-This is my personal portfolio website that entails my life details as a software developer.
+A portfolio website that captures my software development journey.
 	
 ## Technologies
 The Project was developed using:
