@@ -29,7 +29,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['henry-ndaga.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['henry-ndaga.azurewebsites.net', 'henry-ndaga.herokuapp.com', '127.0.0.1']
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
@@ -146,6 +146,4 @@ prod_db  =  dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
 
 django_heroku.settings(locals())
-#MEDIA_URL = '/media/'
-#MEDIA_URL = os.path.join(BASE_DIR,'media')
 

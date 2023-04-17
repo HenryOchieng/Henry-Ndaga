@@ -22,7 +22,7 @@ class ProjectListAndFormView(SuccessMessageMixin, ListView, FormView):
     success_message = 'Thank you for reaching out, a reply will be sent to you shortly!'
 
     def form_valid(self, form):
-        # This method is called when valid form data has been POSTed.
+        # This method is called when valid form data has been POSTED.
         cd = form.cleaned_data
         con = get_connection('django.core.mail.backends.console.EmailBackend')
         send_mail(
