@@ -29,7 +29,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['henry-ndaga.azurewebsites.net', 'henry-ndaga.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['henry-ndaga.azurewebsites.net', '20.119.8.3', '127.0.0.1']
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
