@@ -157,3 +157,8 @@ DATABASES['default'].update(prod_db)
 django_heroku.settings(locals())
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://henry-ndaga.azurewebsites.net/',
+    '20.119.8.33'
+]
+
