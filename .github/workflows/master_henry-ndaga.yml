@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'henry-ndaga'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_33E5959E58D9470BA637495DF7219162 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_73006A61502F4683906B21723A108AD4 }}
